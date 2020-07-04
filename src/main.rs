@@ -120,3 +120,83 @@
 // println!("{}",s1);
 // println!("{}",s2);
 // } 
+
+// ITERATING ON STRINGS
+// fn main(){
+//     for e in "Syed Ahsan ALi".chars(){
+//         println!("{}",e);
+//     }
+// }
+
+// ITERATING STRINGS USING BYTES
+// fn main(){
+//     for e in "Syed Ahsan ALi".bytes(){
+//                 println!("{}",e);
+//             }
+// }
+
+// HASHMAPS===============
+// use std::collections::HashMap;
+// fn main(){
+
+
+// let mut map=HashMap::new();
+// map.insert(String::from("Syed Ahsan Ali"),1);
+// map.insert(String::from("M.Ali Khan"),2);
+// map.insert(String::from("Syed Ahsan Ali"),3);
+// println!("{:#?}",map);
+// }
+
+// // HashMap Construction============
+// use std::collections::HashMap;
+// fn main(){
+//     let color=vec![String::from("Black"),String::from("Blue")];
+//     let key_value=vec![10,20];
+//     let  map:HashMap<_,_> =color.iter().zip(key_value.iter()).collect();
+// println!("{:?}",map);
+// }
+
+// use std::collections::HashMap;
+// fn main(){
+//     let mut map=HashMap::new();
+//     map.insert(String::from("Ahasn"),1);
+//     map.insert(String::from("Tipu"),2);
+
+//     for (key,value) in &map{
+//         println!("{},{}",key,value);
+//     }
+// }
+
+// ENTRY 
+
+// use std::collections::HashMap;
+// fn main(){
+//     let mut map=HashMap::new();
+//     map.entry(String::from("Ahasn")).or_insert(20);
+//         map.entry(String::from("Tipu")).or_insert(40);
+//     println!("{:?}",map);
+// }
+
+// use std::collections::HashMap;
+// fn main(){
+//     let fna=String::from("Blue");
+//     let f=20;
+//     let mut map=HashMap::new();
+//     map.insert(fna,f);
+//     println!("{:?}",map);
+//     let ac=String::from("Yellow");
+//     let z=map.get(&ac);
+//     println!("{:?}",z);
+// }
+
+// // WORDS COUNTER=====================
+// use std::collections::HashMap;
+// fn main(){
+//     let my_string="Hellow World Beautiful World Virtual World";
+//     let mut map=HashMap::new();
+//     for word in my_string.split_whitespace(){
+//         let count=map.entry(word).or_insert(0);
+//         *count+=1;
+//     }
+//     println!("{:#?}",map);
+// }
